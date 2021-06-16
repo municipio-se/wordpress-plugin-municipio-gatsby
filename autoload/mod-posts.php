@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Plugin Name: Disable Modularity Posts fields
- * Description: Remove unsupported fields and options for Modularity’s Posts module
- * Author: Whitespace Dev
- */
-
 add_action(
   "admin_init",
   function () {
