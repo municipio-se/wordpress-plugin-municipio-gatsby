@@ -1,0 +1,19 @@
+{
+  "name": "municipio/municipio-gatsby",
+  "description": "Adapts Municipio for Gatsby",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Municipio\\MunicipioGatsby\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Whitespace",
+      "email": "code@whitespace.se"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}
