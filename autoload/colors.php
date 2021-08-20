@@ -75,7 +75,7 @@ add_action(
   "graphql_register_types",
   function ($type_registry) {
     $type_registry->register_object_type(
-      "ThemeOptions_Colorscheme_BrandColor",
+      "AcfOptionsThemeOptions_Colorscheme_BrandColor",
       [
         "fields" => [
           "key" => ["type" => "String"],
@@ -83,17 +83,23 @@ add_action(
         ],
       ]
     );
-    $type_registry->register_field("ThemeOptions_Colorscheme", "brandColors", [
-      "type" => ["list_of" => "ThemeOptions_Colorscheme_BrandColor"],
-      "resolve" => function () {
-        $source = municipio_gatsby_get_color_choices();
-        $items = [];
-        foreach ($source as $key => $value) {
-          $items[] = compact("key", "value");
-        }
-        return $items;
-      },
-    ]);
+    $type_registry->register_field(
+      "AcfOptionsThemeOptions_Colorscheme",
+      "brandColors",
+      [
+        "type" => [
+          "list_of" => "AcfOptionsThemeOptions_Colorscheme_BrandColor",
+        ],
+        "resolve" => function () {
+          $source = municipio_gatsby_get_color_choices();
+          $items = [];
+          foreach ($source as $key => $value) {
+            $items[] = compact("key", "value");
+          }
+          return $items;
+        },
+      ]
+    );
   },
   20
 );
