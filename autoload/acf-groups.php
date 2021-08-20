@@ -26,3 +26,9 @@ override_acf_group("group_56a72f6430912", [
   "show_in_graphql" => 1,
   "graphql_field_name" => "searchDisplay",
 ]);
+
+// Header
+override_acf_group("group_56a22a9c78e54", [
+  "show_in_graphql" => 1,
+  "graphql_field_name" => "headerOptions",
+]);
