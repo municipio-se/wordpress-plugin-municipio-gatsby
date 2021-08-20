@@ -69,14 +69,15 @@ add_action(
   function () {
     acf_add_local_field([
       "key" => "field_mod_posts_display_layout",
-      "label" => "Layout",
+      "label" => __("Layout", "muncipio-gatsby"),
       "name" => "layout",
       "parent" => "group_571dfd3c07a77", // Data display
       "type" => "radio",
       "layout" => "horizontal",
+      "default_value" => "grid",
       "choices" => [
-        "grid" => __("Grid of cards", "modularity"),
-        "mixed" => __("Cards and list", "modularity"),
+        "grid" => __("Grid of cards", "municipio-gatsby"),
+        "mixed" => __("Cards and list", "municipio-gatsby"),
         // "desc" => __("Horizontal scroll"),
       ],
       "conditional_logic" => [
