@@ -5,6 +5,8 @@
  * Description:       Adapts Municipio for Gatsby
  * Version:           0.5.1
  * Author:            Whitespace Dev
+ * Text Domain: municipio-gatsby
+ * Domain Path: /languages/
  */
 
 define("MUNICIPIO_GATSBY_PATH", dirname(__FILE__));
