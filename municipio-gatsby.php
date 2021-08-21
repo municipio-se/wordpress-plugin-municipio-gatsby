@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Plugin Name:       Municipio Gatsby
- * Description:       Adapts Municipio for Gatsby
- * Version:           0.5.1
- * Author:            Whitespace Dev
+ * Plugin Name: Municipio Gatsby
+ * Description: Adapts Municipio for Gatsby
+ * Version: 0.5.2
+ * Author: Whitespace Dev
  * Text Domain: municipio-gatsby
  * Domain Path: /languages/
  */
