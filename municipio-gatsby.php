@@ -9,6 +9,7 @@
  * Domain Path: /languages/
  */
 
+define("MUNICIPIO_GATSBY_PLUGIN_FILE", __FILE__);
 define("MUNICIPIO_GATSBY_PATH", dirname(__FILE__));
 define("MUNICIPIO_GATSBY_AUTOLOAD_PATH", MUNICIPIO_GATSBY_PATH . "/autoload");
 

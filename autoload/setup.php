@@ -40,6 +40,7 @@ function municipio_gatsby_activate() {
   update_option("modularity-options", $modularity_options);
 }
 
-register_activation_hook(__FILE__, "municipio_gatsby_activate");
-
-// add_action('init', 'municipio_gatsby_activate');
+register_activation_hook(
+  MUNICIPIO_GATSBY_PLUGIN_FILE,
+  "municipio_gatsby_activate"
+);
