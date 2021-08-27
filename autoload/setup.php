@@ -3,6 +3,14 @@
 use Jawira\CaseConverter\Convert;
 
 function municipio_gatsby_activate() {
+  add_option("municipio_gatsby_activated", true);
+}
+
+add_action("admin_init", function () {
+  if (empty(get_option("municipio_gatsby_activated"))) {
+    return;
+  }
+
   global $wp_rewrite;
 
   // Update permalink structure
@@ -38,7 +46,9 @@ function municipio_gatsby_activate() {
   }
 
   update_option("modularity-options", $modularity_options);
-}
+
+  delete_option("municipio_gatsby_activated");
+});
 
 register_activation_hook(
   MUNICIPIO_GATSBY_PLUGIN_FILE,
