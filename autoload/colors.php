@@ -133,6 +133,7 @@ function municipio_gatsby_get_theme_field($extra = []) {
 add_action(
   "acf/init",
   function () {
+
     // For ModText
     acf_add_local_field(
       municipio_gatsby_get_theme_field([
@@ -144,6 +145,13 @@ add_action(
     acf_add_local_field(
       municipio_gatsby_get_theme_field([
         "parent" => "group_571dfd3c07a77",
+      ])
+    );
+
+    // For ModTable
+    acf_add_local_field(
+      municipio_gatsby_get_theme_field([
+        "parent" => "group_5666a2a71d806",
       ])
     );
   },
