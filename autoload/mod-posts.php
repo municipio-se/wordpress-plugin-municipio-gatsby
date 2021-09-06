@@ -22,9 +22,6 @@ add_action(
       // Allow freetext filtering
       acf_remove_local_field("field_59197c6dafb31");
 
-      // Permalink
-      acf_remove_local_field("field_576261c3ef10e");
-
       // Bild
       acf_remove_local_field("field_57625930110b3");
 
