@@ -133,7 +133,6 @@ function municipio_gatsby_get_theme_field($extra = []) {
 add_action(
   "acf/init",
   function () {
-
     // For ModText
     acf_add_local_field(
       municipio_gatsby_get_theme_field([
