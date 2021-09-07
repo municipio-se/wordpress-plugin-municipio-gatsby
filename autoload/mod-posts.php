@@ -75,6 +75,7 @@ add_action(
       "choices" => [
         "grid" => __("Grid of cards", "municipio-gatsby"),
         "mixed" => __("Cards and list", "municipio-gatsby"),
+        "blocks" => __("Colored blocks", "municipio-gatsby"),
         // "desc" => __("Horizontal scroll"),
       ],
       "conditional_logic" => [
