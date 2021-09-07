@@ -146,6 +146,13 @@ add_action(
         "parent" => "group_571dfd3c07a77",
       ])
     );
+
+    // For ModTable
+    acf_add_local_field(
+      municipio_gatsby_get_theme_field([
+        "parent" => "group_5666a2a71d806",
+      ])
+    );
   },
   20
 );
