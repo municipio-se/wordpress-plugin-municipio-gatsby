@@ -67,7 +67,9 @@ add_filter("acf/load_field/key=field_571dfd4c0d9d9", function ($field) {
 
 // Fields
 add_filter("acf/load_field/key=field_571e01e7f246c", function ($field) {
+  // Remove unimplemented options
   unset($field["choices"]["title"]);
+
   return $field;
 });
 
