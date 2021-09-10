@@ -46,11 +46,15 @@ add_action(
 
 // Display as
 add_filter("acf/load_field/key=field_571dfd4c0d9d9", function ($field) {
+  // Remove unimplemented and deprecated options
   unset($field["choices"]["items"]); // post items
   unset($field["choices"]["news"]); // news items
   unset($field["choices"]["grid"]);
   unset($field["choices"]["circular"]);
   unset($field["choices"]["horizontal"]);
+  // Add new options
+  $field["choices"]["blocks"] = __("Blocks", "municipio-gatsby");
+
   return $field;
 });
 
@@ -73,9 +77,8 @@ add_action(
       "layout" => "horizontal",
       "default_value" => "grid",
       "choices" => [
-        "grid" => __("Grid of cards", "municipio-gatsby"),
-        "mixed" => __("Cards and list", "municipio-gatsby"),
-        "block" => __("Colored blocks", "municipio-gatsby"),
+        "grid" => __("Grid of items", "municipio-gatsby"),
+        "mixed" => __("Items and list", "municipio-gatsby"),
         // "desc" => __("Horizontal scroll"),
       ],
       "conditional_logic" => [
@@ -84,6 +87,13 @@ add_action(
             "field" => "field_571dfd4c0d9d9",
             "operator" => "==",
             "value" => "index",
+          ],
+        ],
+        [
+          [
+            "field" => "field_571dfd4c0d9d9",
+            "operator" => "==",
+            "value" => "blocks",
           ],
         ],
       ],
