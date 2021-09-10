@@ -22,6 +22,9 @@ add_action(
       // Allow freetext filtering
       acf_remove_local_field("field_59197c6dafb31");
 
+      // Permalink
+      acf_remove_local_field("field_576261c3ef10e");
+
       // Bild
       acf_remove_local_field("field_57625930110b3");
 
@@ -97,6 +100,21 @@ add_action(
           ],
         ],
       ],
+    ]);
+  },
+  20
+);
+
+// Manual input > Link
+add_action(
+  "acf/init",
+  function () {
+    acf_add_local_field([
+      "key" => "field_mod_posts_manual_input_link",
+      "label" => __("Link", "muncipio-gatsby"),
+      "name" => "link",
+      "parent" => "field_576258d3110b0", // Data display
+      "type" => "link",
     ]);
   },
   20
