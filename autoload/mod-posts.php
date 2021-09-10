@@ -7,9 +7,6 @@ add_action(
       // Columns
       acf_remove_local_field("field_571dfdf50d9da");
 
-      // Link to post type archive
-      acf_remove_local_field("field_57ecf1007b749");
-
       // Hide the title column
       acf_remove_local_field("field_591176fff96d6");
 
