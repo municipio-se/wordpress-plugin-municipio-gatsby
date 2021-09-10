@@ -137,6 +137,16 @@ add_action(
     acf_add_local_field(
       municipio_gatsby_get_theme_field([
         "parent" => "group_5891b49127038",
+        "conditional_logic" => [
+          [
+            [
+              // Hide box frame
+              "field" => "field_5891b6038c120",
+              "operator" => "!=",
+              "value" => "1",
+            ],
+          ],
+        ],
       ])
     );
 
