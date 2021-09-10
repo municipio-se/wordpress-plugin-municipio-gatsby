@@ -55,6 +55,10 @@ add_filter("acf/load_field/key=field_571dfd4c0d9d9", function ($field) {
   unset($field["choices"]["grid"]);
   unset($field["choices"]["circular"]);
   unset($field["choices"]["horizontal"]);
+
+  // Change labels
+  $field["choices"]["index"] = __("Cards", "municipio-gatsby");
+
   // Add new options
   $field["choices"]["blocks"] = __("Blocks", "municipio-gatsby");
 
