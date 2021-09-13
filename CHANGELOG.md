@@ -1,3 +1,19 @@
+## 0.6.0 (September 13, 2021)
+
+### ⚠️ BREAKING CHANGES
+
+- move "blocks" option from layout to display mode
+- replace permalink field with a link field
+- replace "Link" and "Link url" fields in image module with an actual link field
+- remove unimplemented fields for Table module
+
+### Features
+
+- change label for "index" display mode
+- re-enable "Link to post type archive" field
+- disable "Font size" field on text module
+- hide "Theme color" field in text modules with hidden box frame
+
 ## 0.5.7 (September 10, 2021)
 
 ### Features
