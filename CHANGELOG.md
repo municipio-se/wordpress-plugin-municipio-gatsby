@@ -1,3 +1,10 @@
+## 0.6.1 (September 20, 2021)
+
+### Features
+
+- Add ability to post form module submissions via REST
+- Disable unimplemented options on Form module
+
 ## 0.6.0 (September 13, 2021)
 
 ### ⚠️ BREAKING CHANGES
