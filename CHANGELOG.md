@@ -1,3 +1,9 @@
+## 0.6.2 (October 4, 2021)
+
+### Features
+
+- Disable unimplemented options on Video module
+
 ## 0.6.1 (September 20, 2021)
 
 ### Features
