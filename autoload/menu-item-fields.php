@@ -3,7 +3,7 @@
 /**
  * Adds "Icon" field to menu items
  */
-add_action('acf/init', function() {
+add_action("acf/init", function () {
   acf_add_local_field_group([
     "key" => "group_municipio_gatsby_menu_item",
     "title" => __("Menu module properties", "municipio-gatsby"),
