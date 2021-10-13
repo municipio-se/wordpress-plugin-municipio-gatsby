@@ -1,3 +1,9 @@
+## 0.7.0 (October 13, 2021)
+
+### ⚠ BREAKING CHANGES
+
+- add "Icon" field to menu items
+
 ## 0.6.2 (October 4, 2021)
 
 ### Features
