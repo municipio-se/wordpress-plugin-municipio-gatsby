@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Municipio Gatsby
  * Description: Adapts Municipio for Gatsby
- * Version: 0.7.0
+ * Version: 0.8.0
  * Author: Whitespace Dev
  * Text Domain: municipio-gatsby
  * Domain Path: /languages/

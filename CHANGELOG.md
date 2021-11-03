@@ -1,3 +1,9 @@
+## 0.8.0 (November 3, 2021)
+
+### ⚠ BREAKING CHANGES
+
+- re-add "Front End taxonomy filtering" field
+
 ## 0.7.0 (October 13, 2021)
 
 ### ⚠ BREAKING CHANGES
