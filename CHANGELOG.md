@@ -1,3 +1,13 @@
+## 0.8.1 (November 8, 2021)
+
+### Features
+
+- add display settings to Gallery module
+
+### Fixes
+
+- translations
+
 ## 0.8.0 (November 3, 2021)
 
 ### ⚠ BREAKING CHANGES
