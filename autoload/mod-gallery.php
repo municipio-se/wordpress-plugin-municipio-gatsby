@@ -11,7 +11,7 @@ add_action(
       "title" => __("Settings", "municipio-gatsby"),
       "fields" => [
         [
-          "key" => "group_municipio_gatsby_gallery_settings_options",
+          "key" => "group_municipio_gatsby_gallery_settings_display",
           "label" => __("Display settings", "municipio-gatsby"),
           "name" => "display",
           "type" => "checkbox",
@@ -31,7 +31,7 @@ add_action(
           "conditional_logic" => [
             [
               [
-                "field" => "group_municipio_gatsby_gallery_settings_options",
+                "field" => "group_municipio_gatsby_gallery_settings_display",
                 "operator" => "==",
                 "value" => "autoplay",
               ],
