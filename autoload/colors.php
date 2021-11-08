@@ -47,7 +47,7 @@ add_action(
   function () {
     acf_add_local_field([
       "key" => "field_municipio_gatsby_brand_colors",
-      "label" => __("Brand colors", "muncipio-gatsby"),
+      "label" => __("Brand colors", "municipio-gatsby"),
       "name" => "layout",
       "parent" => "group_56a0a7dcb5c09", // Color scheme
       "type" => "textarea",
@@ -112,7 +112,7 @@ function municipio_gatsby_get_theme_field($extra = []) {
   );
   $field_theme_color_options = [
     "key" => "field_5fae89a2efe55",
-    "label" => __("Theme color"),
+    "label" => __("Theme color", "municipio-gatsby"),
     "name" => "theme",
     "type" => count($options) > 8 ? "select" : "radio",
     // "parent" => "", // Intentionally left out
