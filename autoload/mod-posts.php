@@ -84,7 +84,7 @@ add_filter("acf/load_field/key=field_571e01e7f246c", function ($field) {
 
 // Front End taxonomy filtering
 add_filter("acf/load_field/key=field_5af2f2e486366", function ($field) {
-  $field["label"] = __("Allow user to filter results", "municipio_gatsby");
+  $field["label"] = __("Allow user to filter results", "municipio-gatsby");
 
   // XXX: This doesn’t really work because "Data source" is in another field group.
   // $field["conditional_logic"] = [
@@ -114,7 +114,7 @@ add_action(
   function () {
     acf_add_local_field([
       "key" => "field_mod_posts_display_layout",
-      "label" => __("Layout", "muncipio-gatsby"),
+      "label" => __("Layout", "municipio-gatsby"),
       "name" => "layout",
       "parent" => "group_571dfd3c07a77", // Data display
       "type" => "radio",
@@ -123,7 +123,7 @@ add_action(
       "choices" => [
         "grid" => __("Grid of items", "municipio-gatsby"),
         "mixed" => __("Items and list", "municipio-gatsby"),
-        // "desc" => __("Horizontal scroll"),
+        // "desc" => __("Horizontal scroll", "municipio-gatsby"),
       ],
       "conditional_logic" => [
         [
@@ -152,7 +152,7 @@ add_action(
   function () {
     acf_add_local_field([
       "key" => "field_mod_posts_manual_input_link",
-      "label" => __("Link", "muncipio-gatsby"),
+      "label" => __("Link", "municipio-gatsby"),
       "name" => "link",
       "parent" => "field_576258d3110b0", // Data display
       "type" => "link",

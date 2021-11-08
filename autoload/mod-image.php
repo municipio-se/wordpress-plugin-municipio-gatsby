@@ -20,7 +20,7 @@ add_action(
   function () {
     acf_add_local_field([
       "key" => "field_mod_image_link",
-      "label" => __("Link", "muncipio-gatsby"),
+      "label" => __("Link", "municipio-gatsby"),
       "name" => "link",
       "parent" => "group_570770ab8f064", // Data display
       "type" => "link",

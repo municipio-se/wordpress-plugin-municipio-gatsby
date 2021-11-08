@@ -3,12 +3,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Municipio Gatsby\n"
 "POT-Creation-Date: 2021-09-07 13:32+0200\n"
-"PO-Revision-Date: 2021-09-07 13:33+0200\n"
+"PO-Revision-Date: 2021-11-08 10:25+0100\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 2.3.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: municipio-gatsby.php\n"
@@ -18,6 +18,18 @@ msgstr ""
 "Language: sv_SE\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#. Plugin Name of the plugin
+msgid "Municipio Gatsby"
+msgstr "Municipio Gatsby"
+
+#. Description of the plugin
+msgid "Adapts Municipio for Gatsby"
+msgstr "Anpassar Municipio för Gatsby"
+
+#. Author of the plugin
+msgid "Whitespace Dev"
+msgstr "Whitespace Dev"
 
 #: autoload/colors.php:50
 msgid "Brand colors"
@@ -31,21 +43,65 @@ msgstr "Ingen"
 msgid "Theme color"
 msgstr "Temafärg"
 
+#: autoload/menu-item-fields.php:9
+msgid "Menu module properties"
+msgstr "Egenskaper för menymodul"
+
+#: autoload/menu-item-fields.php:13
+msgid "Icon"
+msgstr "Ikon"
+
+#: autoload/mod-gallery.php:11
+msgid "Settings"
+msgstr "Inställningar"
+
+#: autoload/mod-gallery.php:15
+msgid "Display settings"
+msgstr "Visningsinställningar"
+
+#: autoload/mod-gallery.php:20
+msgid "Hide caption"
+msgstr "Dölj bildtekt"
+
+#: autoload/mod-gallery.php:21
+msgid "Hide photographer"
+msgstr "Dölj fotograf"
+
+#: autoload/mod-gallery.php:22
+msgid "Autoplay"
+msgstr "Automatisk uppspelning"
+
+#: autoload/mod-gallery.php:27
+msgid "Pause automatically on hover"
+msgstr "Pausa automatiskt vid hover"
+
+#: autoload/mod-image.php:23 autoload/mod-posts.php:155
+msgid "Link"
+msgstr "Länk"
+
 #: autoload/mod-posts.php:69
+msgid "Cards"
+msgstr "Kort"
+
+#: autoload/mod-posts.php:72
+msgid "Blocks"
+msgstr "Block"
+
+#: autoload/mod-posts.php:87
+msgid "Allow user to filter results"
+msgstr "Tillåt att användare filtrerar resultaten"
+
+#: autoload/mod-posts.php:117
 msgid "Layout"
 msgstr "Layout"
 
-#: autoload/mod-posts.php:76
-msgid "Grid of cards"
-msgstr "Rutnät med kort"
+#: autoload/mod-posts.php:124
+msgid "Grid of items"
+msgstr "Rutnät av objekt"
 
-#: autoload/mod-posts.php:77
-msgid "Cards and list"
-msgstr "Kort och lista"
-
-#: autoload/mod-posts.php:78
-msgid "Colored blocks"
-msgstr "Färgade block"
+#: autoload/mod-posts.php:125
+msgid "Items and list"
+msgstr "Objekt och lista"
 
 #: autoload/page-appearance.php:26
 msgid "Page appearance"
@@ -63,12 +119,12 @@ msgstr "Standard"
 msgid "Landing page"
 msgstr "Landningssida"
 
-#: autoload/post.php:6 autoload/post.php:24 autoload/post.php:26
+#: autoload/post.php:6 autoload/post.php:24 autoload/post.php:25
 msgctxt "Post Type General Name"
 msgid "News"
 msgstr "Nyheter"
 
-#: autoload/post.php:8 autoload/post.php:15
+#: autoload/post.php:7 autoload/post.php:15
 msgctxt "Post Type Singular Name"
 msgid "News"
 msgstr "Nyhet"
@@ -93,7 +149,7 @@ msgstr "Sök nyheter"
 msgid "No news found"
 msgstr "Inga nyheter hittades"
 
-#: autoload/post.php:20
+#: autoload/post.php:19
 msgid "No news found in Trash"
 msgstr "Inga nyheter hittades i papperskorgen"
 
@@ -104,15 +160,3 @@ msgstr "Alla nyheter"
 #: autoload/post.php:30
 msgid "News archive"
 msgstr "Nyhetsarkiv"
-
-#. Plugin Name of the plugin/theme
-msgid "Municipio Gatsby"
-msgstr ""
-
-#. Description of the plugin/theme
-msgid "Adapts Municipio for Gatsby"
-msgstr "Anpassar Municipio för Gatsby"
-
-#. Author of the plugin/theme
-msgid "Whitespace Dev"
-msgstr ""
