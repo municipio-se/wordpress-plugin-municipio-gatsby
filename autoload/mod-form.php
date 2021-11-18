@@ -27,11 +27,19 @@ add_action(
   20
 );
 
-// Display as
+// Fields
 add_filter("acf/load_field/key=field_58eb302883a68", function ($field) {
   // Remove unimplemented field types
-  unset($field["layouts"]["58eccdd75ad90"]); // File upload
-  unset($field["layouts"]["5a266baf943ab"]); // Collapse
-
+  $disabled_layouts = apply_filters(
+    "municipio-gatsby/mod-form/mod-form-options/fields/disabled-layouts",
+    [
+      "58eccdd75ad90", // File upload
+      "5a266baf943ab", // Collapse
+    ],
+    $field["layouts"]
+  );
+  foreach ($disabled_layouts as $layout) {
+    unset($field["layouts"][$layout]); // File upload
+  }
   return $field;
 });
