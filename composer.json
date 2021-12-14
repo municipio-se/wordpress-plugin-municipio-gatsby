@@ -5,7 +5,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Municipio\\MunicipioGatsby\\": "src/"
+      "WPMunicipioGatsby\\": "src/"
     }
   },
   "authors": [
@@ -23,7 +23,8 @@
     }
   ],
   "require": {
-    "jawira/case-converter": "^3.4"
+    "jawira/case-converter": "^3.4",
+    "symfony/yaml": "^5.4"
   },
   "require-dev": {
     "wp-graphql/wp-graphql": "^1.3",

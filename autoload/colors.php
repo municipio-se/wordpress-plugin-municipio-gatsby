@@ -1,5 +1,7 @@
 <?php
 
+use WPMunicipioGatsby\BrandColorDef;
+
 if (!function_exists("set_acf_group_graphql_field_name")) {
   function set_acf_group_graphql_field_name($key, $name) {
     add_action(
@@ -59,16 +61,8 @@ add_action(
 
 function municipio_gatsby_get_color_choices() {
   $encoded = get_field("field_municipio_gatsby_brand_colors", "option");
-  $lines = array_filter(array_map("trim", preg_split("/\R/", $encoded)));
-  $decoded = [];
-  foreach ($lines as $line) {
-    if (preg_match("/([^:\s]+)\s*:\s*(.*)/", $line, $matches)) {
-      $key = $matches[1];
-      $value = $matches[2];
-      $decoded[$key] = $value;
-    }
-  }
-  return $decoded;
+  $def = new BrandColorDef($encoded);
+  return $def->getColorOptions();
 }
 
 add_action(
@@ -80,6 +74,8 @@ add_action(
         "fields" => [
           "key" => ["type" => "String"],
           "value" => ["type" => "String"],
+          "label" => ["type" => "String"],
+          "name" => ["type" => "String"],
         ],
       ]
     );
@@ -91,12 +87,19 @@ add_action(
           "list_of" => "AcfOptionsThemeOptions_Colorscheme_BrandColor",
         ],
         "resolve" => function () {
-          $source = municipio_gatsby_get_color_choices();
-          $items = [];
-          foreach ($source as $key => $value) {
-            $items[] = compact("key", "value");
-          }
-          return $items;
+          $encoded = get_field("field_municipio_gatsby_brand_colors", "option");
+          $def = new BrandColorDef($encoded);
+          return array_values($def->getNormalized());
+        },
+      ]
+    );
+    $type_registry->register_field(
+      "AcfOptionsThemeOptions_Colorscheme",
+      "brandColorsSource",
+      [
+        "type" => "String",
+        "resolve" => function () {
+          return get_field("field_municipio_gatsby_brand_colors", "option");
         },
       ]
     );
@@ -105,7 +108,7 @@ add_action(
 );
 
 function municipio_gatsby_get_theme_field($extra = []) {
-  $options = array_keys(municipio_gatsby_get_color_choices());
+  $options = municipio_gatsby_get_color_choices();
   $options = array_merge(
     ["" => __("None", "municipio-gatsby")],
     array_combine($options, $options)
