@@ -2,7 +2,7 @@
   "name": "municipio/municipio-gatsby",
   "description": "Adapts Municipio for Gatsby",
   "type": "wordpress-plugin",
-  "license": "AGPL-3.0-or-later"",
+  "license": "AGPL-3.0-or-later",
   "autoload": {
     "psr-4": {
       "WPMunicipioGatsby\\": "src/"
