@@ -41,9 +41,9 @@ p-defer@^1.0.0:
   resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
   integrity sha1-n26xgvbJqozXQwBKfU+WsZaw+ww=
 
-"php-parser@git+https://github.com/glayzzle/php-parser.git#bb89fff9e636a991aa3ac931d5f8a66a365fccce":
+"php-parser@https://github.com/glayzzle/php-parser#bb89fff9e636a991aa3ac931d5f8a66a365fccce":
   version "3.0.2"
-  resolved "git+https://github.com/glayzzle/php-parser.git#bb89fff9e636a991aa3ac931d5f8a66a365fccce"
+  resolved "https://github.com/glayzzle/php-parser#bb89fff9e636a991aa3ac931d5f8a66a365fccce"
 
 prettier@^2.3.1:
   version "2.3.1"
