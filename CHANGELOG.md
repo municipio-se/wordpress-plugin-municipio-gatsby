@@ -1,3 +1,12 @@
+# [1.0.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v0.8.3...v1.0.0) (2022-01-25)
+
+
+### Bug Fixes
+
+* Typo ([c60c18b](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/c60c18b7f78661cd6c4dda8e696cd0cee9c0a8fd))
+
+
+
 ## [0.8.3](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v0.8.2...v0.8.3) (2021-12-21)
 
 
