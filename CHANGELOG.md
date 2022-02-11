@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.0.0...v1.0.1) (2022-02-11)
+
+
+### Bug Fixes
+
+* Warning on missing brand colors ([677bc9c](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/677bc9c4289d1dad8063a992759259bd2a2524d7))
+
+
+
 # [1.0.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v0.8.3...v1.0.0) (2022-01-25)
 
 
