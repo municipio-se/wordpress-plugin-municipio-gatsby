@@ -9,7 +9,13 @@ class BrandColorDef {
 
   public function __construct($yaml) {
     $yaml = preg_replace('/(?<!")#[0-9a-fA-F]{3,8}\b(?!")/', '"$0"', $yaml);
-    $this->data = Yaml::parse($yaml);
+    try {
+      $this->data = Yaml::parse($yaml);
+    } catch (\Exception $error) {
+    }
+    if (empty($this->data)) {
+      $this->data = [];
+    }
   }
 
   public function getNormalized() {
