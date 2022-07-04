@@ -1,3 +1,16 @@
+## [1.1.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.0.1...v1.1.0) (2022-07-04)
+
+
+### Features
+
+* Add page fields ([edaaf8e](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/edaaf8efdfa01049dd8cf250b4d10c2ca70f9b4e))
+
+
+### Bug Fixes
+
+* load language files when used as mu-plugin ([f9cbd5b](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/f9cbd5b2c741527386db0186244137917a3a5b62))
+* split textdomain loading strategies into separate hooks ([adb3a5f](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/adb3a5fcd00768175d89f0df45c20888715a97b4))
+
 ### [1.0.1](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.0.0...v1.0.1) (2022-02-11)
 
 
