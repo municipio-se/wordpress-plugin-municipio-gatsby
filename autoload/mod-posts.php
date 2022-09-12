@@ -103,7 +103,9 @@ add_filter("acf/load_field/key=field_5af2f2e486366", function ($field) {
     "municipio_gatsby"
   );
 
+  // Removes dependence on the "Taxonomy filter" field
   unset($field["conditional_logic"]);
+  $field["wrapper"] = [];
 
   return $field;
 });
