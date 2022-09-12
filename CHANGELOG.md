@@ -1,3 +1,10 @@
+### [1.1.1](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.1.0...v1.1.1) (2022-09-12)
+
+
+### Bug Fixes
+
+* "Front End taxonomy filtering" field not visible for all post types ([99d9d40](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/99d9d403cb2b74692a6795c32d748313fdb4f67b))
+
 ## [1.1.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.0.1...v1.1.0) (2022-07-04)
 
 
