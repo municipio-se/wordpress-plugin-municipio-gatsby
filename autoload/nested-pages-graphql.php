@@ -25,9 +25,11 @@ add_filter(
   2
 );
 
-if (!is_admin()) {
-  new NestedPages\Bootstrap();
-}
+add_action("mu_plugins_loaded", function () {
+  if (!is_admin()) {
+    new NestedPages\Bootstrap();
+  }
+});
 
 add_filter(
   "graphql_return_field_from_model",
