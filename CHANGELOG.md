@@ -1,3 +1,16 @@
+## [1.2.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.1.1...v1.2.0) (2022-09-25)
+
+
+### Features
+
+* Expose Nested Pages redirects in GraphQL ([f04e893](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/f04e893e8ac088a853f018680844bf8a9d20a019))
+* Hide Icon field in Notice module ([dca76b2](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/dca76b20fdd6068402398e5e66f02f7421f51334))
+
+
+### Bug Fixes
+
+* Nested Pages bootstrap called to early ([0984389](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/09843890c02d9707f4ec0be56b11f2a8f2b2c8a3))
+
 ### [1.1.1](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.1.0...v1.1.1) (2022-09-12)
 
 
