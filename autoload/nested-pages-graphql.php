@@ -25,7 +25,7 @@ add_filter(
   2
 );
 
-add_action("mu_plugins_loaded", function () {
+add_action("muplugins_loaded", function () {
   if (!is_admin()) {
     new NestedPages\Bootstrap();
   }
