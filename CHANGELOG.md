@@ -1,3 +1,10 @@
+### [1.2.1](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.0...v1.2.1) (2022-09-26)
+
+
+### Bug Fixes
+
+* Nested Pages not bootstrapped correctly ([606ec76](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/606ec7651bf25f27c7d8de88307345b906abe378))
+
 ## [1.2.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.1.1...v1.2.0) (2022-09-25)
 
 
