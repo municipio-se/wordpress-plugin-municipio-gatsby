@@ -148,6 +148,12 @@ add_action(
               "operator" => "!=",
               "value" => "1",
             ],
+            [
+              // Disable theme color for expandable list
+              "field" => "field_571dfd4c0d9d9",
+              "operator" => "!=",
+              "value" => "expandable-list",
+            ],
           ],
         ],
       ])
