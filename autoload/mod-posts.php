@@ -158,7 +158,8 @@ add_action(
       "name" => "link",
       "parent" => "field_576258d3110b0", // Data display
       "type" => "link",
-      'instructions' => 'Endast tillgängligt om visningsläge är kort eller block',
+      "instructions" =>
+        "Endast tillgängligt om visningsläge är kort eller block",
     ]);
   },
   20
