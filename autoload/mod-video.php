@@ -15,6 +15,9 @@ add_action(
 
       // Video: OGG
       acf_remove_local_field("field_57454c49d44da");
+
+      // Placeholder
+      acf_remove_local_field("field_57454c7ad44dc");
     }
   },
   20
