@@ -1,3 +1,10 @@
+### [1.2.3](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.2...v1.2.3) (2022-10-31)
+
+
+### Bug Fixes
+
+* add instructions to Link and Theme color for Manual input ([7935ab2](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/7935ab290e50e7e6fb15c0853d7249fea3957789))
+
 ### [1.2.2](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.1...v1.2.2) (2022-10-31)
 
 
