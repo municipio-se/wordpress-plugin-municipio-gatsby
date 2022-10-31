@@ -1,15 +1,15 @@
-# Copyright (C) 2021 Whitespace Dev
+# Copyright (C) 2022 Whitespace Dev
 # This file is distributed under the same license as the Municipio Gatsby plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Municipio Gatsby 0.8.0\n"
+"Project-Id-Version: Municipio Gatsby 1.2.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wordpress-plugin-municipio-gatsby\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-11-08T09:11:26+00:00\n"
+"POT-Creation-Date: 2022-10-31T17:29:47+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: municipio-gatsby\n"
@@ -26,15 +26,15 @@ msgstr ""
 msgid "Whitespace Dev"
 msgstr ""
 
-#: autoload/colors.php:50
+#: autoload/colors.php:52
 msgid "Brand colors"
 msgstr ""
 
-#: autoload/colors.php:110
+#: autoload/colors.php:113
 msgid "None"
 msgstr ""
 
-#: autoload/colors.php:115
+#: autoload/colors.php:118
 msgid "Theme color"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgid "Pause automatically on hover"
 msgstr ""
 
 #: autoload/mod-image.php:23
-#: autoload/mod-posts.php:155
+#: autoload/mod-posts.php:157
 msgid "Link"
 msgstr ""
 
@@ -87,15 +87,15 @@ msgstr ""
 msgid "Allow user to filter results"
 msgstr ""
 
-#: autoload/mod-posts.php:117
+#: autoload/mod-posts.php:119
 msgid "Layout"
 msgstr ""
 
-#: autoload/mod-posts.php:124
+#: autoload/mod-posts.php:126
 msgid "Grid of items"
 msgstr ""
 
-#: autoload/mod-posts.php:125
+#: autoload/mod-posts.php:127
 msgid "Items and list"
 msgstr ""
 
