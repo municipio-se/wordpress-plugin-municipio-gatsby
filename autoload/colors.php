@@ -150,9 +150,9 @@ add_action(
             ],
             [
               // Disable theme color for expandable list
-              'field' => 'field_571dfd4c0d9d9',
-              'operator' => '!=',
-              'value' => 'expandable-list',
+              "field" => "field_571dfd4c0d9d9",
+              "operator" => "!=",
+              "value" => "expandable-list",
             ],
           ],
         ],
