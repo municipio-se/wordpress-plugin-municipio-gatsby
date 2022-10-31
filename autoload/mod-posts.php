@@ -158,6 +158,10 @@ add_action(
       "name" => "link",
       "parent" => "field_576258d3110b0", // Data display
       "type" => "link",
+      "instructions" => __(
+        "Only available if display mode is cards or blocks",
+        "municipio-gatsby"
+      ),
     ]);
   },
   20
