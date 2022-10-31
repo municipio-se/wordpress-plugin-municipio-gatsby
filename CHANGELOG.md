@@ -1,3 +1,11 @@
+### [1.2.2](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.1...v1.2.2) (2022-10-31)
+
+
+### Bug Fixes
+
+* Disable error message about missing color scheme ([f0328db](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/f0328db66f82e388f7ef4218fd28324de1d55141))
+* Disable theme color for expandable list ([293c9af](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/293c9af4cba299f5d39d30a05f12581eeec29f79))
+
 ### [1.2.1](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.0...v1.2.1) (2022-09-26)
 
 
