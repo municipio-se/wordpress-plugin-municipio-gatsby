@@ -81,7 +81,7 @@ class HeadlessMuncipioPostForm {
     $postFormPage = esc_url($_POST["modularity-form-url"]);
     $checkReferer = url_to_postid($postReferer);
     $checkFormPage = url_to_postid($postFormPage);
-    $dbStorage = sanitize_title($_POST["modularity-gdpr-data"]);
+    $dbStorage = get_field("db_storage", $_POST["modularity-form-id"]);
 
     if (empty($postReferer) || ($checkReferer !== 0 && $checkFormPage !== 0)) {
       $formUrl =
@@ -241,7 +241,7 @@ class HeadlessMuncipioPostForm {
       $referer .= "&modularityForm=" . urlencode($postFormPage);
     }
 
-    if ($dbStorage === "1") {
+    if ($dbStorage) {
       wp_delete_post($submission, true);
     }
 
