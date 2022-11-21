@@ -1,3 +1,10 @@
+### [1.2.4](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.3...v1.2.4) (2022-11-21)
+
+
+### Bug Fixes
+
+* Handle db_storage field properly for form module ([636dd2e](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/636dd2ef9615006d3de082f654664292c0ca8539))
+
 ### [1.2.3](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.2...v1.2.3) (2022-10-31)
 
 
