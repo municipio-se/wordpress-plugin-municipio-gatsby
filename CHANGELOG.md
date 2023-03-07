@@ -1,3 +1,10 @@
+### [1.2.5](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.4...v1.2.5) (2023-03-07)
+
+
+### Bug Fixes
+
+* Runtime error in `graphql_return_field_from_model` ([f4a028c](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/f4a028c0ea9ffc6f5100c88e866c1b42bdec69ad))
+
 ### [1.2.4](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.3...v1.2.4) (2022-11-21)
 
 
