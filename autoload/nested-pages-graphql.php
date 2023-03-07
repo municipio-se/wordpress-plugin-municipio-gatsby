@@ -42,7 +42,7 @@ add_filter(
     $owner,
     $current_user
   ) {
-    if ($post->post_type == "np-redirect") {
+    if ($post instanceof WP_Post && $post->post_type == "np-redirect") {
       $np_nav_menu_item_type = get_post_meta(
         $post->ID,
         "_np_nav_menu_item_type",
