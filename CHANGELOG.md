@@ -1,3 +1,11 @@
+## [1.3.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.5...v1.3.0) (2023-05-06)
+
+
+### Features
+
+* Add `municipio_gatsby_feature_enabled` function ([af1980a](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/af1980a150f3491eac882771e80b92fe3f99c08f))
+* Add `simplified_mod_posts_layouts` feature flag ([3e37f88](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/3e37f88c54a69f137a9864ef86319e9127cb4489))
+
 ### [1.2.5](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.4...v1.2.5) (2023-03-07)
 
 
