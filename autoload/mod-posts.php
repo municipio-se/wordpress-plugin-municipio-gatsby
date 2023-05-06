@@ -83,10 +83,9 @@ add_filter("acf/load_field/key=field_571dfd4c0d9d9", function ($field) {
     $field["choices"]["blocks"] = __("Blocks", "municipio-gatsby");
   }
 
-  $choices = $field["choices"];
-  $choices = apply_filters(
+  $field["choices"] = apply_filters(
     "municipio-gatsby/mod-posts/data_display/fields/display_as/choices",
-    $choices
+    $field["choices"]
   );
 
   return $field;
