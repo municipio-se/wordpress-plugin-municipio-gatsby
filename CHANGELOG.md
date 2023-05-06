@@ -1,3 +1,10 @@
+### [1.3.1](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.3.0...v1.3.1) (2023-05-06)
+
+
+### Bug Fixes
+
+* Broken municipio-gatsby/mod-posts/data_display/fields/display_as/choices filter ([0987a0c](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/0987a0c03ee16d14cf7e71228312379f519a7748))
+
 ## [1.3.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.2.5...v1.3.0) (2023-05-06)
 
 
