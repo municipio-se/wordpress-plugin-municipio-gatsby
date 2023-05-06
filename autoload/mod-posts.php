@@ -58,18 +58,36 @@ add_action(
 
 // Display as
 add_filter("acf/load_field/key=field_571dfd4c0d9d9", function ($field) {
-  // Remove unimplemented and deprecated options
-  unset($field["choices"]["items"]); // post items
-  unset($field["choices"]["news"]); // news items
-  unset($field["choices"]["grid"]);
-  unset($field["choices"]["circular"]);
-  unset($field["choices"]["horizontal"]);
+  if (municipio_gatsby_feature_enabled("simplified_mod_posts_layouts")) {
+    // Remove unimplemented and deprecated options
+    unset($field["choices"]["items"]); // post items
+    unset($field["choices"]["news"]); // news items
+    unset($field["choices"]["index"]);
+    unset($field["choices"]["circular"]);
+    unset($field["choices"]["horizontal"]);
 
-  // Change labels
-  $field["choices"]["index"] = __("Cards", "municipio-gatsby");
+    // Add new options
+    $field["choices"]["mixed"] = __("Items and list", "municipio-gatsby");
+  } else {
+    // Remove unimplemented and deprecated options
+    unset($field["choices"]["items"]); // post items
+    unset($field["choices"]["news"]); // news items
+    unset($field["choices"]["grid"]);
+    unset($field["choices"]["circular"]);
+    unset($field["choices"]["horizontal"]);
 
-  // Add new options
-  $field["choices"]["blocks"] = __("Blocks", "municipio-gatsby");
+    // Change labels
+    $field["choices"]["index"] = __("Cards", "municipio-gatsby");
+
+    // Add new options
+    $field["choices"]["blocks"] = __("Blocks", "municipio-gatsby");
+  }
+
+  $choices = $field["choices"];
+  $choices = apply_filters(
+    "municipio-gatsby/mod-posts/data_display/fields/display_as/choices",
+    $choices
+  );
 
   return $field;
 });
@@ -114,6 +132,9 @@ add_filter("acf/load_field/key=field_5af2f2e486366", function ($field) {
 add_action(
   "acf/init",
   function () {
+    if (municipio_gatsby_feature_enabled("simplified_mod_posts_layouts")) {
+      return;
+    }
     acf_add_local_field([
       "key" => "field_mod_posts_display_layout",
       "label" => __("Layout", "municipio-gatsby"),
