@@ -1,5 +1,30 @@
 <?php
 
+if (!function_exists("set_acf_group_graphql_field_name")) {
+  function set_acf_group_graphql_field_name($key, $name) {
+    add_action(
+      "init",
+      function () use ($key, $name) {
+        if (!function_exists("acf_get_local_store")) {
+          return;
+        }
+        $store = acf_get_local_store("groups");
+        $group = $store->get($key);
+        if (empty($group)) {
+          return;
+        }
+        $group["show_in_graphql"] = true;
+        $group["graphql_field_name"] = $name;
+        $store->set($key, $group);
+      },
+      20 // Run after Municipio theme bootstrap
+    );
+  }
+}
+
+// Color scheme
+set_acf_group_graphql_field_name("group_56a0a7dcb5c09", "colorScheme");
+
 add_action(
   "init",
   function () {
@@ -12,6 +37,46 @@ add_action(
     acf_remove_local_field("field_56a0a7e36365b");
     // Color scheme
     acf_remove_local_field("field_5a9946401d638");
+  },
+  20
+);
+
+add_action(
+  "graphql_register_types",
+  function ($type_registry) {
+    $type_registry->register_object_type(
+      "AcfOptionsThemeOptions_Colorscheme_BrandColor",
+      [
+        "fields" => [
+          "key" => ["type" => "String"],
+          "value" => ["type" => "String"],
+          "label" => ["type" => "String"],
+          "name" => ["type" => "String"],
+        ],
+      ]
+    );
+    $type_registry->register_field(
+      "AcfOptionsThemeOptions_Colorscheme",
+      "brandColors",
+      [
+        "type" => [
+          "list_of" => "AcfOptionsThemeOptions_Colorscheme_BrandColor",
+        ],
+        "resolve" => function () {
+          return [];
+        },
+      ]
+    );
+    $type_registry->register_field(
+      "AcfOptionsThemeOptions_Colorscheme",
+      "brandColorsSource",
+      [
+        "type" => "String",
+        "resolve" => function () {
+          return null;
+        },
+      ]
+    );
   },
   20
 );
