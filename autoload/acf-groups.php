@@ -33,12 +33,6 @@ override_acf_group("group_56a22a9c78e54", [
   "graphql_field_name" => "headerOptions",
 ]);
 
-// Theme Options > Color Scheme
-override_acf_group("group_56a0a7dcb5c09", [
-  "show_in_graphql" => 1,
-  "graphql_field_name" => "colorScheme",
-]);
-
 // Page > Display settings
 override_acf_group("group_56c33cf1470dc", [
   "show_in_graphql" => 1,
