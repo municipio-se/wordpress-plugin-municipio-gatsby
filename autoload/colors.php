@@ -110,9 +110,10 @@ add_action(
 function municipio_gatsby_get_theme_field($extra = []) {
   $options = municipio_gatsby_get_color_choices();
   $options = array_merge(
-    ["" => __("None", "municipio-gatsby")],
+    // ["" => __("None", "municipio-gatsby")],
     array_combine($options, $options)
   );
+  $options = apply_filters("municipio-gatsby/color-choices", $options, $extra);
   $field_theme_color_options = [
     "key" => "field_5fae89a2efe55",
     "label" => __("Theme color", "municipio-gatsby"),
