@@ -120,10 +120,7 @@ function municipio_gatsby_get_theme_field($extra = []) {
     "name" => "theme",
     "type" => count($options) > 8 ? "select" : "radio",
     // "parent" => "", // Intentionally left out
-    "instructions" => __(
-      "Only available if display mode is cards or blocks",
-      "municipio-gatsby"
-    ),
+    "instructions" => "",
     "show_in_graphql" => true,
     "graphql_field_name" => "theme",
     "choices" => $options,
