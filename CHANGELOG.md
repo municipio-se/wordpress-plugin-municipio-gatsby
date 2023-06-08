@@ -1,3 +1,26 @@
+## [2.0.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.3.1...v2.0.0) (2023-06-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* Re-add image field on manual posts
+* Remove simplified_mod_posts_layouts option
+* Remove brand color settings
+
+### Features
+
+* Add `municipio-gatsby/color-choices` filter ([fd63151](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/fd63151db227740ceee595767093e99103c4db62))
+* Re-add image field on manual posts ([055c722](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/055c72239fe52d7075899c7b933c42720f21e2c8))
+* Remove brand color settings ([81b37e6](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/81b37e6ae6a4cdfe2b3aada7843aaa9808be1bd8))
+* Remove simplified_mod_posts_layouts option ([86c704d](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/86c704de97ab40b415e8d38b4b4ecf8ffec49029))
+
+
+### Bug Fixes
+
+* Re-add brand color to gql schema for backwards compatibility ([b4a1a4e](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/b4a1a4e62759af39ad4a13a2366de4adce3b078f))
+* Remove color field instructions ([9551c07](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/9551c079d3cb2f0fb4e183556aec2cf1de132034))
+* Remove unimplemented fields from image module ([b36a14c](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/b36a14c9424580bcfc372b7ac0dd1bf6dd59af9e))
+
 ### [1.3.1](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.3.0...v1.3.1) (2023-05-06)
 
 
