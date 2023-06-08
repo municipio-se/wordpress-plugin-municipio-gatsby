@@ -58,30 +58,15 @@ add_action(
 
 // Display as
 add_filter("acf/load_field/key=field_571dfd4c0d9d9", function ($field) {
-  if (municipio_gatsby_feature_enabled("simplified_mod_posts_layouts")) {
-    // Remove unimplemented and deprecated options
-    unset($field["choices"]["items"]); // post items
-    unset($field["choices"]["news"]); // news items
-    unset($field["choices"]["index"]);
-    unset($field["choices"]["circular"]);
-    unset($field["choices"]["horizontal"]);
+  // Remove unimplemented and deprecated options
+  unset($field["choices"]["items"]); // post items
+  unset($field["choices"]["news"]); // news items
+  unset($field["choices"]["index"]);
+  unset($field["choices"]["circular"]);
+  unset($field["choices"]["horizontal"]);
 
-    // Add new options
-    $field["choices"]["mixed"] = __("Items and list", "municipio-gatsby");
-  } else {
-    // Remove unimplemented and deprecated options
-    unset($field["choices"]["items"]); // post items
-    unset($field["choices"]["news"]); // news items
-    unset($field["choices"]["grid"]);
-    unset($field["choices"]["circular"]);
-    unset($field["choices"]["horizontal"]);
-
-    // Change labels
-    $field["choices"]["index"] = __("Cards", "municipio-gatsby");
-
-    // Add new options
-    $field["choices"]["blocks"] = __("Blocks", "municipio-gatsby");
-  }
+  // Add new options
+  $field["choices"]["mixed"] = __("Items and list", "municipio-gatsby");
 
   $field["choices"] = apply_filters(
     "municipio-gatsby/mod-posts/data_display/fields/display_as/choices",
@@ -126,47 +111,6 @@ add_filter("acf/load_field/key=field_5af2f2e486366", function ($field) {
 
   return $field;
 });
-
-// Layout
-add_action(
-  "acf/init",
-  function () {
-    if (municipio_gatsby_feature_enabled("simplified_mod_posts_layouts")) {
-      return;
-    }
-    acf_add_local_field([
-      "key" => "field_mod_posts_display_layout",
-      "label" => __("Layout", "municipio-gatsby"),
-      "name" => "layout",
-      "parent" => "group_571dfd3c07a77", // Data display
-      "type" => "radio",
-      "layout" => "horizontal",
-      "default_value" => "grid",
-      "choices" => [
-        "grid" => __("Grid of items", "municipio-gatsby"),
-        "mixed" => __("Items and list", "municipio-gatsby"),
-        // "desc" => __("Horizontal scroll", "municipio-gatsby"),
-      ],
-      "conditional_logic" => [
-        [
-          [
-            "field" => "field_571dfd4c0d9d9",
-            "operator" => "==",
-            "value" => "index",
-          ],
-        ],
-        [
-          [
-            "field" => "field_571dfd4c0d9d9",
-            "operator" => "==",
-            "value" => "blocks",
-          ],
-        ],
-      ],
-    ]);
-  },
-  20
-);
 
 // Manual input > Link
 add_action(
