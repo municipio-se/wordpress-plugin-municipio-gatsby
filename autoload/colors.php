@@ -81,30 +81,30 @@ add_action(
   20
 );
 
-function municipio_gatsby_get_theme_field($extra = []) {
-  $options = [
-    // ["" => __("None", "municipio-gatsby")],
-  ];
-  $options = apply_filters("municipio-gatsby/color-choices", $options, $extra);
-  $field_theme_color_options = [
-    "key" => "field_5fae89a2efe55",
-    "label" => __("Theme color", "municipio-gatsby"),
-    "name" => "theme",
-    "type" => count($options) > 8 ? "select" : "radio",
-    // "parent" => "", // Intentionally left out
-    "instructions" => "",
-    "show_in_graphql" => true,
-    "graphql_field_name" => "theme",
-    "choices" => $options,
-    "default_value" => "",
-    "allow_null" => false,
-    "other_choice" => false,
-    "save_other_choice" => false,
-    "layout" => "horizontal",
-    "return_format" => "value",
-  ];
-  return array_merge($field_theme_color_options, $extra);
-}
+// function municipio_gatsby_get_theme_field($extra = []) {
+//   $options = [
+//     // ["" => __("None", "municipio-gatsby")],
+//   ];
+//   $options = apply_filters("municipio-gatsby/color-choices", $options, $extra);
+//   $field_theme_color_options = [
+//     "key" => "field_5fae89a2efe55",
+//     "label" => __("Theme color", "municipio-gatsby"),
+//     "name" => "theme",
+//     "type" => count($options) > 8 ? "select" : "radio",
+//     // "parent" => "", // Intentionally left out
+//     "instructions" => "",
+//     "show_in_graphql" => true,
+//     "graphql_field_name" => "theme",
+//     "choices" => $options,
+//     "default_value" => "",
+//     "allow_null" => false,
+//     "other_choice" => false,
+//     "save_other_choice" => false,
+//     "layout" => "horizontal",
+//     "return_format" => "value",
+//   ];
+//   return array_merge($field_theme_color_options, $extra);
+// }
 
 // Theme color
 add_action(
