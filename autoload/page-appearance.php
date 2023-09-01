@@ -34,6 +34,14 @@ add_action("acf/init", function () {
     "title" => __("Page appearance", "municipio-gatsby"),
     "fields" => [
       [
+        "key" => "field_page_appearance_hide_title",
+        "label" => __("Hide title", "municipio-gatsby"),
+        "name" => "hide_title",
+        "type" => "true_false",
+        "default_value" => 0,
+        "show_in_graphql" => 1,
+      ],
+      [
         "key" => "field_page_appearance_template",
         "label" => __("Page template", "municipio-gatsby"),
         "name" => "template",
