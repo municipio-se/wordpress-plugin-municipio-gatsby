@@ -21,6 +21,14 @@ add_action(
 
 // Adds "Page appearance" field group on pages
 add_action("acf/init", function () {
+  $page_templates = [
+    "default" => __("Default", "municipio-gatsby"),
+    // "landingPage" => __("Landing page", "municipio-gatsby"),
+  ];
+  $page_templates = apply_filters(
+    "whitespace_a11ystack_page_templates",
+    $page_templates
+  );
   acf_add_local_field_group([
     "key" => "group_page_appearance",
     "title" => __("Page appearance", "municipio-gatsby"),
@@ -31,12 +39,14 @@ add_action("acf/init", function () {
         "name" => "template",
         "type" => "select",
         "default_value" => "default",
-        "choices" => [
-          "default" => __("Default", "municipio-gatsby"),
-          "landingPage" => __("Landing page", "municipio-gatsby"),
-        ],
+        "choices" => $page_templates,
         "return_format" => "value",
         "show_in_graphql" => 1,
+        // Hide the field if there is only one choice
+        "wrapper" => [
+          // Hide the field if there is only one choice
+          "style" => count($page_templates) > 1 ? null : "display:none;",
+        ],
       ],
     ],
     "location" => [
