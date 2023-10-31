@@ -24,6 +24,7 @@ class HeadlessMuncipioPostForm {
       )
     ) {
       $_POST = $params;
+      do_action("post_submission_filter", $params);
       $this->submit();
       $return["status"] = "Success";
     }
