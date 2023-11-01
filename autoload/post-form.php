@@ -24,7 +24,7 @@ class HeadlessMuncipioPostForm {
       )
     ) {
       $_POST = $params;
-      do_action("post_submission_filter", $params);
+      do_action("municipio_gatsby_post_form_submission_filter", $params);
       $this->submit();
       $return["status"] = "Success";
     }
