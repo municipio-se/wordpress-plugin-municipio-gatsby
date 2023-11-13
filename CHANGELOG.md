@@ -1,3 +1,30 @@
+## [3.0.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v2.0.0...v3.0.0) (2023-11-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove landing page template and add `whitespace_a11ystack_page_templates` filter
+* Move code to whitespace-a11ystack plugin
+* Move menu item fields to a11ystack plugin
+* Remove theme color from manually input posts
+
+### Features
+
+* Add "Hide title" field to page appearance ([c924648](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/c9246482415417736783917014ffafea66c0727d))
+* Move menu item fields to a11ystack plugin ([5059171](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/505917103afb5ea8d646b8ba5964783f505a1c3f))
+* Remove landing page template and add `whitespace_a11ystack_page_templates` filter ([62b7842](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/62b7842c9251c196c0275af24e7e951c0f721cc8))
+* Remove theme color from manually input posts ([a437c99](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/a437c9983af988fe0ea3a225cd0b66024d99d50c))
+
+
+### Bug Fixes
+
+* Remove theme color from manually input posts ([a763e58](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/a763e5872aed01b3a8a89830ffdb1326333e81dc))
+
+
+### Code Refactoring
+
+* Move code to whitespace-a11ystack plugin ([e5fc409](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/commit/e5fc409c60c3b02410ec99b4db5a30f3bbbc1701))
+
 ## [2.0.0](https://github.com/municipio-se/wordpress-plugin-municipio-gatsby/compare/v1.3.1...v2.0.0) (2023-06-08)
 
 
